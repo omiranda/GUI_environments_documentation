@@ -38,4 +38,4 @@ dtvariance_patch(path_list_file)
 
 - `output_folder`: Path to a output folder. If not provided,  creates a folder named `dtvariace_files` and saves the data there:  `output_folder=[pwd filesep 'dtvariance_files']`;
 - `save_in_BIDS_folder`: accepts as input `1` or `0`. If not provided its default value is zero. If provided and set to `1`, saves variance files in the same location where the `*dtseries` cifti files are located.
-- `string_to_match`: advanced feature to allow search for dtseries on different nested folders. No need to use it if imaging data is BIDs formatted.
+- `string_to_match`: advanced feature to allow search for dtseries on different nested folders. No need to use it if imaging data is saved using BIDS standads.
