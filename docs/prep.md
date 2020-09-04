@@ -27,7 +27,8 @@ This is an example of how to run it:
 The `GUI_environments` look for outliers based on the variance of the dtseries. If existing, that file is used, if not the file is calculated. You can calculate the variance file by running this patch:
 
 ```matlab
-dtvariance_patch(path_list_file
+dtvariance_patch(path_list_file)
 ```
-
+## Inputs
 **Inputs**
+- `path_list_file`: Path to the list of participants made by the function `scout_bids_for_gui_env`
