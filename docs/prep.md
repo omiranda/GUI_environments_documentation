@@ -24,3 +24,10 @@ This is an example of how to run it:
 
 # Pre-calculate variance file for all the subjects
 
+The `GUI_environments` look for outliers based on the variance of the dtseries. If existing, that file is used, if not the file is calculated. You can calculate the variance file by running this patch:
+
+```matlab
+dtvariance_patch(path_list_file
+```
+
+**Inputs**
