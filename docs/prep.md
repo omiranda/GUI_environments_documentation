@@ -12,6 +12,23 @@ This is an example of how to run it:
 [T_count, list,text_counts,text_missing] = scout_bids_for_gui_env(root_path)
 ```
 
+| list_func | rest_bold_star_mat | rest_bold_dtseries_nii_ | rest_bold_HCP_ptseries_nii_ | rest_bold_ordon_ptseries_nii_ | 
+| --- :| --- :| --- :| --- :| --- :|
+| C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\human\sub-NDARINV00BD7VDC\ses-baselineYear1Arm1\func | 1.00 | 1.00 | 1.00 | 1.00 | 
+| C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\human\sub-NDARINV00CY2MDM\ses-baselineYear1Arm1\func | 1.00 | 1.00 | 1.00 | 1.00 | 
+| C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\human\sub-NDARINV00HEV6HB\ses-baselineYear1Arm1\func | 1.00 | 1.00 | 1.00 | 1.00 | 
+| C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\human\sub-NDARINV00J52GPG\ses-baselineYear1Arm1\func | 1.00 | 1.00 | 1.00 | 1.00 | 
+| C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\human\sub-NDARINV00LH735Y\ses-baselineYear1Arm1\func | 1.00 | 1.00 | 1.00 | 1.00 | 
+| C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\human\sub-NDARINV00LJVZK2\ses-baselineYear1Arm1\func | 1.00 | 1.00 | 1.00 | 1.00 | 
+| C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\human\sub-NDARINV00NPMHND\ses-baselineYear1Arm1\func | 1.00 | 1.00 | 1.00 | 1.00 | 
+| C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\human\sub-NDARINV00R4TXET\ses-baselineYear1Arm1\func | 1.00 | 1.00 | 1.00 | 1.00 | 
+| C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\human\sub-NDARINV00U4FTRU\ses-baselineYear1Arm1\func | 1.00 | 1.00 | 1.00 | 1.00 | 
+| C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\human\sub-NDARINV00UMK5VC\ses-baselineYear1Arm1\func | 1.00 | 1.00 | 1.00 | 1.00 | 
+| C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\human\sub-NDARINV00X2TBWJ\ses-baselineYear1Arm1\func | 1.00 | 1.00 | 1.00 | 1.00 | 
+| C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\human\sub-NDARINV0A4P0LWM\ses-baselineYear1Arm1\func | 1.00 | 1.00 | 1.00 | 1.00 | 
+| C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\human\sub-NDARINV0A4ZDYNL\ses-baselineYear1Arm1\func | 1.00 | 1.00 | 1.00 | 1.00 | 
+| C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\human\sub-NDARINV0A6WVRZY\ses-baselineYear1Arm1\func | 1.00 | 1.00 | 1.00 | 1.00 | 
+
 **Inputs**
 `root_path` is the path to the derivatives folder containing the subjetc ids
 
