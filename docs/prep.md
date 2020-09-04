@@ -12,7 +12,15 @@ This is an example of how to run it:
 [T_count, list,text_counts,text_missing] = scout_bids_for_gui_env(root_path)
 ```
 
+**Inputs**
+`root_path` is the path to the derivatives folder containing the subjetc ids
 
+**Outputs**
+
+- `T_count`
+- `list`
+- `text_counts`
+- `text_missing`
 
 # Pre-calculate variance file for all the subjects
 
