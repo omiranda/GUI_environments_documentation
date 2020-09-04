@@ -1,0 +1,10 @@
+site_name: GUI_environments
+theme: readthedocs
+pages:
+- Overview: GUI_environments.md
+- Example: example.md
+- Exploring the outputs: exploring_outputs.md
+- Rationale: rationale.md
+- Recommended steps in preparation to run it smoothly: prep.md
+- Known issues: known_issues.md
+- Installation and set-up: install_and_setup.md
