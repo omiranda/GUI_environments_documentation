@@ -1,9 +1,3 @@
-# About
-
-This page details the steps to set up and run the GUI_environments script (written by Oscar Miranda-Domínguez (miran045@umn.edu)).
-
-Repo location: `https://gitlab.com/Fair_lab/GUI_environments`
-
 # Introduction
 
 The **GUI_environments** is a graphical user interface (GUI) developed in Matlab aimed to calculate connectivity matrices using parcellated data (i.e. Gordon<sup>1</sup>  or HCP<sup>2</sup>  parcellation schemas) processed following the surface-based registration pipelines implemented in the DCAN lab (https://www.ohsu.edu/school-of-medicine/developmental-cognition-and-neuroimaging-lab) where the data are saved as ciftis in BIDS format folders <sup>3/sup>.
