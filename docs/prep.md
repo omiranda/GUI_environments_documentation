@@ -23,7 +23,7 @@ root_path=[/path_to_the_data_in_my_system/];
 C:.
 
 
-`
+```
 ├───my_subject1
 │   └───ses-baselineYear1Arm1
 │       ├───anat
@@ -33,35 +33,23 @@ C:.
 │       ├───anat
 │       └───func
 ├───sub-NDARINV00HEV6HB
-`
+```
 
 C:.
 
 
 ├───sub-36112
-
 │   └───ses-4mo
-
 │       ├───anat
-
 │       └───func
-
 ├───sub-36119
-
 │   └───ses-4mo
-
 │       ├───anat
-
 │       └───func
-
 ├───sub-36147
-
 │   └───ses-4mo
-
 │       ├───anat
-
 │       └───func
-
 
 
 
