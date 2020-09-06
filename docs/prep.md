@@ -21,6 +21,8 @@ root_path=[/path_to_the_data_in_my_system/];
 [T_count, list,text_counts,text_missing] = scout_bids_for_gui_env(root_path)
 ```
 C:.
+
+
 `
 ├───my_subject1
 │   └───ses-baselineYear1Arm1
@@ -32,7 +34,9 @@ C:.
 │       └───func
 ├───sub-NDARINV00HEV6HB
 `
+
 C:.
+
 
 ├───sub-36112
 │   └───ses-4mo
@@ -46,6 +50,8 @@ C:.
 │   └───ses-4mo
 │       ├───anat
 │       └───func
+
+
 
 | list_func | rest_bold_star_mat | rest_bold_dtseries_nii_ | rest_bold_HCP_ptseries_nii_ | rest_bold_ordon_ptseries_nii_ | 
 | --- :| --- :| --- :| --- :| --- :|
