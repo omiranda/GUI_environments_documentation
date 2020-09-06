@@ -2,9 +2,8 @@ site_name: GUI_environments
 theme: readthedocs
 pages:
 - Overview: GUI_environments.md
-- Recommended steps in preparation to run it smoothly: prep.md
+- Preparation: prep.md
 - Usage: usage.md
-- Example: example.md
 - Exploring the outputs: exploring_outputs.md
 - Rationale: rationale.md
 - Tips: tips.md
