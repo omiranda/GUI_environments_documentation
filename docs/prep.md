@@ -1,13 +1,10 @@
-# Preparation              
+# List of participants        
 
 
-- **List of participants**. In preparation, you need the list of paths to the processed data from the participants on which connectivity matrices will be calculated. This list needs to be saved as a txt file. Keep in mind that the name of this txt file will be used as prefix in folders and files created by this GUI. You might want to use a descriptive name such as “controls_good_QC.txt”, “PD_and_Ct.txt”, …. When this tutorial was prepared, the selected name was “subject_list.txt”. You’ll see the consequences of this decision.
+In preparation, you need the list of paths to the processed data from the participants on which connectivity matrices will be calculated. This list needs to be saved as a txt file. Keep in mind that the name of this txt file will be used as prefix in folders and files created by this GUI. You might want to use a descriptive name such as “controls_good_QC.txt”, “PD_and_Ct.txt”, …. When this tutorial was prepared, the selected name was “subject_list.txt”. You’ll see the consequences of this decision.
 Following screenshot shows the content of the subject_list.txt file which contains fullpath to the processed data just before the MNI_NonLinear folder:
 
-# Recommended steps in preparation to run it smoothly  
-
-
-# Explore BIDS folders, get list of participants and report counts
+# Get list of participants, explore folders and count files
 
 To feed the GUI_environments you need a list of participants. This list can be generated using the function `scout_bids_for_gui_env`. This function will allow you to:
 
