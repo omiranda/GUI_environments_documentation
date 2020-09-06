@@ -39,17 +39,29 @@ C:.
 
 
 ├───sub-36112
+
 │   └───ses-4mo
+
 │       ├───anat
+
 │       └───func
+
 ├───sub-36119
+
 │   └───ses-4mo
+
 │       ├───anat
+
 │       └───func
+
 ├───sub-36147
+
 │   └───ses-4mo
+
 │       ├───anat
+
 │       └───func
+
 
 
 
