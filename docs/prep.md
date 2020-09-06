@@ -1,9 +1,10 @@
-# Recommended steps in preparation to run it smoothly
+# Preparation              
 
 
 - **List of participants**. In preparation, you need the list of paths to the processed data from the participants on which connectivity matrices will be calculated. This list needs to be saved as a txt file. Keep in mind that the name of this txt file will be used as prefix in folders and files created by this GUI. You might want to use a descriptive name such as “controls_good_QC.txt”, “PD_and_Ct.txt”, …. When this tutorial was prepared, the selected name was “subject_list.txt”. You’ll see the consequences of this decision.
 Following screenshot shows the content of the subject_list.txt file which contains fullpath to the processed data just before the MNI_NonLinear folder:
 
+# Recommended steps in preparation to run it smoothly  
 
 
 # Explore BIDS folders, get list of participants and report counts
@@ -33,7 +34,7 @@ C:.
 │       ├───anat
 │       └───func
 ├───sub-NDARINV00HEV6HB
-```
+``` 
 
 C:.
 
