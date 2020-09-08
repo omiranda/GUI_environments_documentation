@@ -1,11 +1,10 @@
-
 To run it, you need an iterative Matlab session and also to have access to the 
 processed data. You can also run the executable (WIP)
 
 # Step 1: Add code to yor Matlab session
 
 After opening Matlab, add to your current session the path to the code. For example, if the code lives in `C:\Users\oscar\OneDrive\matlab_code`, 
-you need to type in Matlab:
+you need to type in Matlab's terminal:
 
 ```matlab
 addpath(genpath('C:\Users\oscar\OneDrive\matlab_code'))
@@ -56,11 +55,11 @@ Next, it will ask for the method to use for motion censoring. Default is power 2
 
 ![Motion censoring](./usage/gui_motion_censoring.png)
 
-* **FD_th** (frame displacement threshold): maximum FD allowed to be included. Frames with a FD higher than the number provided here will be excluded. Default is 0.2. Note, the GUI will also discharge segments of less than 3 continuous surviving frames flanked by “bad” frames (ie frames with FD larger than the threshold).
+* **FD_th** (frame displacement threshold): maximum FD allowed to be included. Frames with a FD higher than the number provided here will be excluded. Default is 0.2. Note, the GUI will also discharge segments of less than 3 continuous surviving frames flanked by “bad” frames (*i.e.* frames with FD larger than the threshold).
 * **min_time_minute**: how long (in minutes) the surviving frames need to add to for inclusion. Participants with a total number of surviving frames less than the time selected here will be excluded. Default is 2.5 minutes.
 * **kip_frames**: How many frames to exclude at the beginning of each resting state session. Default is 5.
 * **n_ar**: How many autoregressive terms to use to remove autocorrelations. You can leave it at 5 (the default value).
-* **Detect Outliers**: 1 or 0, ie yes or not, respectively. It selects outliers based on the variance across grayordinates (ie the variance was calculated on each dtseries file before parcellation) on the surviving frames. It uses the Matlab’s function "*isthisanoutlier*” using the method: 'median'. 
+* **Detect Outliers**: 1 or 0, *i.e.* yes or not, respectively. It selects outliers based on the variance across grayordinates (*i.e.* the variance was calculated on each dtseries file before parcellation) on the surviving frames. It uses the Matlab’s function "*isthisanoutlier*” using the method: 'median'. 
 
 
 The GUI also calculates and displays “on the fly” the number of surviving participants as you change the options
@@ -85,9 +84,9 @@ Once happy with the motion censoring parameters, click on "Find timecourses" for
 
 It is extremely important to understand that the GUI will calculate 3 connectivity matrices per participant. Those connectivity matrices are calculated using different number of frames. 
 
-In the example used here, we said that we want connectivity matrices with at least 5 minutes of data, ie using 375 frames with a TR of 0.8 seconds (5x60/0.8=375), (Note: the GUI reads the TR within the provided data, so no need to provide this number). 
+In the example used here, we said that we want connectivity matrices with at least 5 minutes of data, *i.e.* using 375 frames with a TR of 0.8 seconds (5x60/0.8=375), (Note: the GUI reads the TR within the provided data, so no need to provide this number). 
 
-While each surviving participant will have at least 375 frames, each participant can have a distinct number of “good frames” (>375). For example, surviving participant 1 has 531 “good (low motion)” frames and surviving participant 2 has 921 frames and partocipant 6 has 423 good frames. The maximum number of good frames across participants is 423. 
+While each surviving participant will have at least 375 frames, each participant can have a distinct number of “good frames” (>375). For example, surviving participant 1 has 531 “good (low motion)” frames and surviving participant 2 has 921 frames and participant 6 has 423 good frames. The maximum number of good frames across participants is 423. 
 
 | | Surviving frames | Selected number of frames | 
 | --- :| --- :| --- :|
