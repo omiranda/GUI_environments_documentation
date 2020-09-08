@@ -81,7 +81,7 @@ The following block shows the folders with processed data within each path
 |   |   |   +--- fake_ID_02_fake_visit_1_task-rest_run-4_motion.tsv
 +-
 ```
-# `scout_bids_for_gui_env`: Get list of participants, explore folders and count files
+#  Get list of participants, explore folders and count files using `scout_bids_for_gui_env`
 
 To feed the GUI_environments you need a list of participants. This list can be generated using the function `scout_bids_for_gui_env`. This function will allow you to:
 
