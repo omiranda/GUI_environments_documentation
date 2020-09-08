@@ -81,35 +81,29 @@ The following block shows the folders with processed data within each path
 |   |   |   +--- fake_ID_02_fake_visit_1_task-rest_run-4_motion.tsv
 +-
 ```
-## Subtitle 2
+# Variance files
 
-asasas
+To identify outliers based on bold data across grayoordinates, the GUI_environments look for a txt file that conteins, for each frame, the variance across grayordinates. The `GUI_environments` look for that file in the BIDS folders or at an alternative path provided by the user. You can pre-calculate that variance file using the function [`dtvariance_patch`](prep_varriance.md)
 
+Following block shows the list of variance files  for the example used in this tutorial:
 
-asas
+```
++--- fake_ID_01_fake_visit_1_task-rest_bold_timeseries_variance.txt
++--- fake_ID_02_fake_visit_1_task-rest_bold_timeseries_variance.txt
++--- fake_ID_03_fake_visit_1_task-rest_bold_timeseries_variance.txt
++--- fake_ID_04_fake_visit_1_task-rest_bold_timeseries_variance.txt
++--- fake_ID_05_fake_visit_1_task-rest_bold_timeseries_variance.txt
++--- fake_ID_06_fake_visit_1_task-rest_bold_timeseries_variance.txt
++--- fake_ID_07_fake_visit_1_task-rest_bold_timeseries_variance.txt
++--- fake_ID_08_fake_visit_1_task-rest_bold_timeseries_variance.txt
++--- fake_ID_09_fake_visit_1_task-rest_bold_timeseries_variance.txt
++--- fake_ID_10_fake_visit_1_task-rest_bold_timeseries_variance.txt
++--- fake_ID_11_fake_visit_1_task-rest_bold_timeseries_variance.txt
++--- fake_ID_12_fake_visit_1_task-rest_bold_timeseries_variance.txt
++--- fake_ID_13_fake_visit_1_task-rest_bold_timeseries_variance.txt
++--- fake_ID_14_fake_visit_1_task-rest_bold_timeseries_variance.txt
 
-as
-
-## Subtitle 2
-asas
-asas
-asas
-
-
-assa
-
-### Subtitle 3
-
-
-dssd
-
-### Subtitle 3
-Subtitle 3
-Subtitle 3
-
-Subtitle 3
-Subtitle 3
-as
+```
 
 # Pre-calculate variance file for all the subjects
 
