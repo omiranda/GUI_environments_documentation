@@ -82,3 +82,14 @@ Every time you change the parameters, you can recalculate the histogram of survi
 Once happy with the motion censoring parameters, click here for the Next step: Read frames and motion numbers
 
 ![Find timecourses](./usage/find_timecourses.png)
+
+It is extremely important to understand that the GUI will calculate 3 connectivity matrices per participant. Those connectivity matrices are calculated using different number of frames. 
+In the example used here, we said that we want connectivity matrices with at least 5 minutes of data, ie using 375 frames with a TR of 0.8 seconds (5x60/0.8=375), (Note: the GUI reads the TR within the provided data, so no need to provide this number). 
+While each surviving participant will have at least 375 frames, each participant can have a distinct number of “good frames” (>375). 
+For example, surviving participant 1 has 163 “good (low motion)” frames and surviving participant 2 has 166 frames. The minimum number of good frames across participants is 163. Hence, the GUI will calculate 3 connectivity matrices per participant:
+
+* Using exactly the number of frames specified in the min_time_minute dialog. Frames are selected randomly out of all the surviving frames. In this example, each surviving participant will have connectivity matrices with 150 good frames.
+* Using the minimum number of good frames above “min_time_minute”. Frames are selected randomly from the surviving frames. In this case, each participant will have a connectivity matrix with 163 frames selected. For participant 1 this connectivity matrix will have all the surviving frames. For the participant 2, 163 frames will be selected randomly out of the 166 surviving frames.
+* Using all the frames. A connectivity matrix per participant using all the surviving frames.
+
+You might want to maximize the number of surviving frames to be included by adjusting the  parameter “min_time_minute”. This procedure might be relevant if you want to calculate connectivity matrices and save the data per group on different folders. Your groups of interest could be “Controls”, “Condition x”, “Intervention y”. To do this, you need to run the GUI environments on each list, so you might want to use the same (optimized) “min_time_minute” each time you run the GUI.
