@@ -89,16 +89,16 @@ In the example used here, we said that we want connectivity matrices with at lea
 
 While each surviving participant will have at least 375 frames, each participant can have a distinct number of “good frames” (>375). For example, surviving participant 1 has 531 “good (low motion)” frames and surviving participant 2 has 921 frames and partocipant 6 has 423 good frames. The maximum number of good frames across participants is 423. 
 
-| | Surviving frames | Largest common number of surviving frames across participants | Selected number of frames | 
-| --- :| --- :| --- :| --- :|
-| Participant 1 | 531 | 423 | 375 | 
-| Participant 2 | 921 | 423 | 375 | 
-| Participant 3 | 867 | 423 | 375 | 
-| Participant 4 | 511 | 423 | 375 | 
-| Participant 5 | 650 | 423 | 375 | 
-| **Participant 6** | 423 | 423 | 375 | 
-| Participant 7 | 915 | 423 | 375 | 
-| Participant 8 | 641 | 423 | 375 | 
+| | Surviving frames | Selected number of frames | 
+| --- :| --- :| --- :|
+| Participant 1 | 531 | 375 | 
+| Participant 2 | 921 | 375 | 
+| Participant 3 | 867 | 375 | 
+| Participant 4 | 511 | 375 | 
+| Participant 5 | 650 | 375 | 
+| **Participant 6** | 423 | 375 | 
+| Participant 7 | 915 | 375 | 
+| Participant 8 | 641 | 375 | 
 
 Hence, the GUI will calculate 3 connectivity matrices per participant:
 
