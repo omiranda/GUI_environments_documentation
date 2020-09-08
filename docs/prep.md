@@ -89,71 +89,26 @@ To feed the GUI_environments you need a list of participants. This list can be g
 - Make a report of dtseries, ptseries and dot mat files.
 - Generate a report of folders with missing data.
 
-This is an example of how to run it:
+This is a basic example of how to run it:
 
 ```matlab
-root_path=[/path_to_the_data_in_my_system/];
-[T_count, list,text_counts,text_missing] = scout_bids_for_gui_env(root_path)
+root_path='C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_human';
+[T_count, list,text_counts,text_missing] = scout_bids_for_gui_env(root_path);
 ```
-C:.
 
-
-```
-├───my_subject1
-│   └───ses-baselineYear1Arm1
-│       ├───anat
-│       └───func
-├───my_subject2
-│   └───ses-baselineYear1Arm1
-│       ├───anat
-│       └───func
-├───sub-NDARINV00HEV6HB
-``` 
-
-C:.
-
-
-├───sub-36112
-│   └───ses-4mo
-│       ├───anat
-│       └───func
-├───sub-36119
-│   └───ses-4mo
-│       ├───anat
-│       └───func
-├───sub-36147
-│   └───ses-4mo
-│       ├───anat
-│       └───func
-
-
-
-| list_func | rest_bold_star_mat | rest_bold_dtseries_nii_ | rest_bold_HCP_ptseries_nii_ | rest_bold_ordon_ptseries_nii_ | 
-| --- :| --- :| --- :| --- :| --- :|
-| ~\sub-NDARINV00BD7VDC\ses-baselineYear1Arm1\func | 1 | 1 | 1 | 1 | 
-| ~\sub-NDARINV00CY2MDM\ses-baselineYear1Arm1\func | 1 | 1 | 1 | 1 | 
-| ~\sub-NDARINV00HEV6HB\ses-baselineYear1Arm1\func | 1 | 1 | 1 | 1 | 
-| ~\sub-NDARINV00J52GPG\ses-baselineYear1Arm1\func | 1 | 1 | 1 | 1 | 
-| ~\sub-NDARINV00LH735Y\ses-baselineYear1Arm1\func | 1 | 1 | 1 | 1 | 
-| ~\sub-NDARINV00LJVZK2\ses-baselineYear1Arm1\func | 1 | 1 | 1 | 1 | 
-| ~\sub-NDARINV00NPMHND\ses-baselineYear1Arm1\func | 1 | 1 | 1 | 1 | 
-| ~\sub-NDARINV00R4TXET\ses-baselineYear1Arm1\func | 1 | 1 | 1 | 1 | 
-| ~\sub-NDARINV00U4FTRU\ses-baselineYear1Arm1\func | 1 | 1 | 1 | 1 | 
-| ~\sub-NDARINV00UMK5VC\ses-baselineYear1Arm1\func | 1 | 1 | 1 | 1 | 
-| ~\sub-NDARINV00X2TBWJ\ses-baselineYear1Arm1\func | 1 | 1 | 1 | 1 | 
-| ~\sub-NDARINV0A4P0LWM\ses-baselineYear1Arm1\func | 1 | 1 | 1 | 1 | 
-| ~\sub-NDARINV0A4ZDYNL\ses-baselineYear1Arm1\func | 1 | 1 | 1 | 1 | 
-| ~\sub-NDARINV0A6WVRZY\ses-baselineYear1Arm1\func | 1 | 1 | 1 | 1 | 
-
-**Inputs**
+**Mandatory Input**
 `root_path` is the path to the derivatives folder containing the subjetc ids
 
 **Outputs**
 
-- `T_count`
-- `list`
-- `text_counts`
-- `text_missing`
+- `T_count.` Table reporting the file types per participant in the `root_path`.
+- `list` A matlab cell with the fullpath of subjects with data. This cell has the same content as the txt file that is created ans saved by this function. 
+- `text_counts`. Cell array showing a summary count of file *per* type/extension.
+- `text_missing`. Cell array showing a summary count of missing files *per* type/extension.
+- txt file. It also save a txt file indicating the number of participants with data to calculate connectivity matrices. THe default name has a s preffix `list_N_`, followed by the actual count. In this example the file name is `list_N_14.txt`.
+
+
+
 
 # Pre-calculate variance file for all the subjects
 
