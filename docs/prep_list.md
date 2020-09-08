@@ -71,7 +71,7 @@ root_path='C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_
 | N folders with missing \*rest\*.mat data = 0 | 
 | N folders with missing \*rest\*bold\*dtseries.nii* data = 0 | 
 
-- txt file. It also save a txt file indicating the number of participants with data to calculate connectivity matrices. The default name has a s preffix `list_N_`, followed by the actual count. In this example the file name is `list_N_14.txt`.
+- txt file. It also save a txt file indicating the number of participants with data to calculate connectivity matrices. The default name is `list.txt`.
 
 
 
@@ -146,7 +146,7 @@ Corresponding outputs are:
 | N folders with missing \*rest\*bold\*ordon\*ptseries.nii* data = 0 | 
 | N folders with missing \*rest\*bold\*HCP\*ptseries.nii* data = 0 | 
 
-- txt file. It also save a txt file indicating the number of participants with data to calculate connectivity matrices. The default name has a s preffix `list_N_`, followed by the actual count. In this example the file name is `list_N_14.txt`.
+- txt file. It also save a txt file indicating the number of participants with data to calculate connectivity matrices. 
 
 # Specifying preffix for output txt file
 
