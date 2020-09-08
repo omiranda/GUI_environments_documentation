@@ -5,9 +5,9 @@ The **GUI_environments** is a graphical user interface (GUI) developed in Matlab
 
 The **GUI_environments** applies motion censoring and calculate connectivity matrices controlling the number of frames across participants. This GUI calculate connectivity matrices using 3 different methods or environments:
 
-- Standard. Connectivity matrices using Pearson-correlations.
-- No-autocorrelation. Same as before but after removal of autocorrelation.
-- Connectotyping. Using a model based approach as defined in the manuscript Connectotyping: Model Based Fingerprinting of the Functional Connectome”  (still Work in Progress due to figuring out a way to generalize jonb submission in different clusters).
+- **Standard**. Connectivity matrices using Pearson-correlations.
+- **No-autocorrelation**. Same as before but after removal of autocorrelation.
+- **Connectotyping**. Using a model based approach as defined in the manuscript Connectotyping: Model Based Fingerprinting of the Functional Connectome”  (still Work in Progress due to figuring out a way to generalize jonb submission in different clusters).
 
 
 # References
