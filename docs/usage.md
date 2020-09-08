@@ -116,9 +116,7 @@ Now, click on “Set path output” to indicate the folder you like the data to 
 
 ![Select folder to save timecourses](./usage/select_folder_to_save_fconn.PNG)
 
-"C:\Users\oscar\OneDrive\Read_the_Docs\GUI_environments_documentation\docs\usage\select_folder_to_save_fconn.PNG"
-
-# Step 9
+# Step 10
 
 Once selecting the output folder, you just need to click on “Make environments”
 
@@ -128,4 +126,4 @@ The GUI will make a new txt file that only includes the surviving participants. 
 
 The filename of the surviving participants will have as prefix the filename of the original list. After that prefix, the new name will have encoded the parameters used for motion censoring:
 
-![File sith surviving subjects](./usgae/surv_txt.PNG)
+![File sith surviving subjects](./usage/surv_txt.PNG)
