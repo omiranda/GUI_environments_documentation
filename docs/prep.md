@@ -1,13 +1,11 @@
-This code needs as input a text file with a **list of participants** with processed data. This section explains the content of the file and also describes how to use the support function `scout_bids_for_gui_env` to generate this file.
+This code needs as input a text file with a **list of participants** with processed data. 
 
 In addition, the code requires *per* participant a **cifti's `dtseries` variance file** to identify and exclude outliers. The code wil look for that file in the `root_path/ID/visit/func/` folder. If that file does not exist, the GUI will calculate the variance and make the corresponding file. If needed, you can precalculate those files and save time using the function `dtvariance_patch`.
 
 
-
 # List of participants        
 
-
-In preparation, you need the list of paths to the processed data from the participants on which connectivity matrices will be calculated. This list needs to be saved as a txt file. Keep in mind that the name of this txt file will be used as prefix in folders and files created by this GUI. You might want to use a descriptive name such as “controls_good_QC.txt”, “PD_and_Ct.txt”, …. When this tutorial was prepared, the selected name was `“list_N_14.txt”`. You’ll see the consequences of this decision. As shown below, this list can be generated using the function `scout_bids_for_gui_env`.
+In preparation, you need the list of paths to the processed data from the participants on which connectivity matrices will be calculated. This list needs to be saved as a txt file. Keep in mind that the name of this txt file will be used as prefix in folders and files created by this GUI. You might want to use a descriptive name such as “controls_good_QC.txt”, “PD_and_Ct.txt”, …. When this tutorial was prepared, the selected name was `“list_N_14.txt”`. You’ll see the consequences of this decision. This list can be generated using the function [`scout_bids_for_gui_env`](prep_list.md).
 
 
 Following block shows the content of the subject_list's txt file which contains fullpath to the processed data:
@@ -83,7 +81,7 @@ The following block shows the folders with processed data within each path
 ```
 # Variance files
 
-To identify outliers based on bold data across grayoordinates, the GUI_environments look for a txt file that conteins, for each frame, the variance across grayordinates. The `GUI_environments` look for that file in the BIDS folders or at an alternative path provided by the user. You can pre-calculate that variance file using the function [`dtvariance_patch`](prep_varriance.md)
+To identify outliers based on bold data across grayoordinates, the GUI_environments look for a txt file that conteins, for each frame, the variance across grayordinates. The `GUI_environments` look for that file in the BIDS folders or at an alternative path provided by the user. You can pre-calculate that variance file using the function [`dtvariance_patch`](prep_variance.md)
 
 Following block shows the list of variance files  for the example used in this tutorial:
 
