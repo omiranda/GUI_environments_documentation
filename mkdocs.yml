@@ -4,7 +4,7 @@ pages:
 - Overview: GUI_environments.md
 - Preparation, overview: prep.md
 - Preparation, list of participants: prep_list.md
-- preparation, varianza files: prep_varriance.md
+- Preparation, variance files: prep_variance.md
 - Usage: usage.md
 - Exploring the outputs: exploring_outputs.md
 - Rationale: rationale.md
