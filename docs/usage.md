@@ -47,12 +47,14 @@ When done, the GUI will ask for alternative path for *variance files*:
 
     'Some variance files might not exist in the derivatives folder. If existing, provide an alternative path to look for variance files'
 
-If you [premade variance files using `dtvariance_patch`](prep_variance.md), you can provide the path to such folder as shwon in this figure:
+If you [premade variance files using `dtvariance_patch`](prep_variance.md), you can provide the path to that folder as shwon in this figure:
 
 ![Provding path to folder with variance files](./usage/path_variance_folder.png)
 
 
 Next it will ask for the method to use for motion censoring. Default is power 2014 fd only. Then, the GUI will ask for other parameters for inclusion and exclusion of frames:
+
+![Motion censoring](./usage/gui_motion_censoring.png)
 
 * **FD_th** (frame displacement threshold): maximum FD allowed to be included. Frames with a FD higher than the number provided here will be excluded. Default is 0.2. Note, the GUI will also discharge segments of less than 3 continuous surviving frames flanked by “bad” frames (ie frames with FD larger than the threshold).
 * **min_time_minute**: how long (in minutes) the surviving frames need to add to for inclusion. Participants with a total number of surviving frames less than the time selected here will be excluded. Default is 2.5 minutes.
