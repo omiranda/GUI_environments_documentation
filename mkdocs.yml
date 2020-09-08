@@ -3,6 +3,7 @@ theme: readthedocs
 pages:
 - Overview: GUI_environments.md
 - Preparation: prep.md
+- Prep., get list of participants using scout_bids_for_gui_env: prep_list.md
 - Usage: usage.md
 - Exploring the outputs: exploring_outputs.md
 - Rationale: rationale.md
