@@ -65,10 +65,11 @@ Next it will ask for the method to use for motion censoring. Default is power 20
 
 The GUI also calculates and displays “on the fly” the number of surviving participants as you change the options
 
-~[Updating count of surviving participants](./usage/updating_count.png)
+![Updating count of surviving participants](./usage/updating_count.png)
 
-"C:\Users\oscar\OneDrive\Read_the_Docs\GUI_environments_documentation\docs\usage\updating_count.png"
+
 
 # Step 5
 
 The dialog “Show histogram” will help you to decide values for the parameters to use to maximize the number of participants. For example, if the default values are used, 4 participants survive motion censoring.
+![Show histogram](./usage/show_hist.PNG)
