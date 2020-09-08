@@ -81,7 +81,7 @@ The following block shows the folders with processed data within each path
 |   |   |   +--- fake_ID_02_fake_visit_1_task-rest_run-4_motion.tsv
 +-
 ```
-# Get list of participants, explore folders and count files
+# `scout_bids_for_gui_env`: Get list of participants, explore folders and count files
 
 To feed the GUI_environments you need a list of participants. This list can be generated using the function `scout_bids_for_gui_env`. This function will allow you to:
 
@@ -102,6 +102,7 @@ root_path='C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_
 **Outputs**
 
 - `T_count.` Table reporting the file types per participant in the `root_path`.
+
 | list_func | rest_star_mat | rest_bold_dtseries_nii_ | 
 | --- :| --- :| --- :|
 | C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_human\fake_ID_01\fake_visit_1\func | 1 | 1 | 
@@ -118,7 +119,9 @@ root_path='C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_
 | C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_human\fake_ID_12\fake_visit_1\func | 1 | 1 | 
 | C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_human\fake_ID_13\fake_visit_1\func | 1 | 1 | 
 | C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_human\fake_ID_14\fake_visit_1\func | 1 | 1 | 
+
 - `list` A matlab cell with the fullpath of subjects with data. This cell has the same content as the txt file that is created ans saved by this function. 
+
 | list | 
 | --- :|
 | C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_human\fake_ID_01\fake_visit_1 | 
@@ -135,13 +138,17 @@ root_path='C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_
 | C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_human\fake_ID_12\fake_visit_1 | 
 | C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_human\fake_ID_13\fake_visit_1 | 
 | C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_human\fake_ID_14\fake_visit_1 | 
+
 - `text_counts`. Cell array showing a summary count of file *per* type/extension.
+
 | text_counts | 
 | --- :|
 | N func = 14 | 
 | N *rest*.mat = 14 | 
 | N *rest*bold*dtseries.nii* = 14 | 
+
 - `text_missing`. Cell array showing a summary count of missing files *per* type/extension.
+
 | text_missing | 
 | --- :|
 | N folders with missing *rest*.mat data = 0 | 
