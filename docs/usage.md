@@ -33,6 +33,6 @@ The GUI will open and ask for the path to the txt file that contains the list of
 
 After clicking on “Path to group file”, provide the path to the txt file:
 
-![Pick your group file](./usage/provide_path_txt.PNG)
+![Pick your group file](./usage/provide_path_txt.png)
 
 After selecting the file, click on “Open”. The GUI will read the paths and will determine how many different versions of the pipeline were used when processing data since this parameter is encoded in the Folder name of the processed data. The GUI will display the number of participants and the number of versions of the pipeline used to process the data.
