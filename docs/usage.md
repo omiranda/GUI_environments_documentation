@@ -61,3 +61,8 @@ Next it will ask for the method to use for motion censoring. Default is power 20
 * **kip_frames**: How many frames to exclude at the beginning of each resting state session. Default is 5.
 * **n_ar**: How many autoregressive terms to use to remove autocorrelations. You can leave it at 5 (the default value).
 * **Detect Outliers**: 1 or 0, ie yes or not, respectively. It selects outliers based on the variance across grayordinates (ie the variance was calculated on each dtseries file before parcellation) on the surviving frames. It uses the Matlab’s function "*isthisanoutlier*” using the method: 'median'. 
+
+
+The GUI also calculates and displays “on the fly” the number of surviving participants as you change the options
+
+~[Updating count of surviving participants](./usage/updating_count.png)
