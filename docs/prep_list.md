@@ -61,15 +61,15 @@ root_path='C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_
 | text_counts | 
 | :---|
 | N func = 14 | 
-| N *rest*.mat = 14 | 
-| N *rest*bold*dtseries.nii* = 14 | 
+| N \*rest\*.mat = 14 | 
+| N \*rest\*bold\*dtseries.nii* = 14 | 
 
 - `text_missing`. Cell array showing a summary count of missing files *per* type/extension.
 
 | text_missing | 
 | :---|
-| N folders with missing *rest*.mat data = 0 | 
-| N folders with missing *rest*bold*dtseries.nii* data = 0 | 
+| N folders with missing \*rest\*.mat data = 0 | 
+| N folders with missing \*rest\*bold\*dtseries.nii* data = 0 | 
 
 - txt file. It also save a txt file indicating the number of participants with data to calculate connectivity matrices. The default name has a s preffix `list_N_`, followed by the actual count. In this example the file name is `list_N_14.txt`.
 
@@ -80,8 +80,8 @@ root_path='C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_
 To look for paths with several parcellation schemas, for example Gordon and HCP, you can use the extra argument *extra_strings_to_match* as follows: 
 
 ```matlab
-extra_strings_to_match{1}='*rest*bold*ordon*ptseries.nii*';
-extra_strings_to_match{2}='*rest*bold*HCP*ptseries.nii*';
+extra_strings_to_match{1}='\*rest\*bold\*ordon*ptseries.nii*';
+extra_strings_to_match{2}='\*rest\*bold\*HCP*ptseries.nii*';
 [T_count, list,text_counts,text_missing] = scout_bids_for_gui_env(path_BIDS_data,...
     'extra_strings_to_match',extra_strings_to_match)
 ```
@@ -132,19 +132,19 @@ Corresponding outputs are:
 | text_counts | 
 | --- :|
 | N func = 14 | 
-| N *rest*.mat = 14 | 
-| N *rest*bold*dtseries.nii* = 14 | 
-| N *rest*bold*ordon*ptseries.nii* = 14 | 
-| N *rest*bold*HCP*ptseries.nii* = 14 | 
+| N \*rest\*.mat = 14 | 
+| N \*rest\*bold\*dtseries.nii* = 14 | 
+| N \*rest\*bold\*ordon\*ptseries.nii* = 14 | 
+| N \*rest\*bold\*HCP\*ptseries.nii* = 14 | 
 
 - `text_missing`. Cell array showing a summary count of missing files *per* type/extension.
 
 | text_missing | 
 | --- :|
-| N folders with missing *rest*.mat data = 0 | 
-| N folders with missing *rest*bold*dtseries.nii* data = 0 | 
-| N folders with missing *rest*bold*ordon*ptseries.nii* data = 0 | 
-| N folders with missing *rest*bold*HCP*ptseries.nii* data = 0 | 
+| N folders with missing \*rest\*.mat data = 0 | 
+| N folders with missing \*rest\*bold\*dtseries.nii* data = 0 | 
+| N folders with missing \*rest\*bold\*ordon\*ptseries.nii* data = 0 | 
+| N folders with missing \*rest\*bold\*HCP\*ptseries.nii* data = 0 | 
 
 - txt file. It also save a txt file indicating the number of participants with data to calculate connectivity matrices. The default name has a s preffix `list_N_`, followed by the actual count. In this example the file name is `list_N_14.txt`.
 
