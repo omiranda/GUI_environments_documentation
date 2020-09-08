@@ -1,9 +1,15 @@
+This code needs as input a text file with a **list of participants** with processed data. This section explains the content of the file and also describes how to use the support function `scout_bids_for_gui_env` to generate this file.
+
+In addition, the code requires *per* participant a **cifti's `dtseries` variance file** to identify and exclude outliers. The code wil look for that file in the `root_path/ID/visit/func/` folder. If that file does not exist, the GUI will calculate the variance and make the corresponding file. If needed, you can precalculate those files and save time using the function `dtvariance_patch`.
+
 
 
 # List of participants        
 
 
-In preparation, you need the list of paths to the processed data from the participants on which connectivity matrices will be calculated. This list needs to be saved as a txt file. Keep in mind that the name of this txt file will be used as prefix in folders and files created by this GUI. You might want to use a descriptive name such as “controls_good_QC.txt”, “PD_and_Ct.txt”, …. When this tutorial was prepared, the selected name was `“list_N_14.txt”`. You’ll see the consequences of this decision.
+In preparation, you need the list of paths to the processed data from the participants on which connectivity matrices will be calculated. This list needs to be saved as a txt file. Keep in mind that the name of this txt file will be used as prefix in folders and files created by this GUI. You might want to use a descriptive name such as “controls_good_QC.txt”, “PD_and_Ct.txt”, …. When this tutorial was prepared, the selected name was `“list_N_14.txt”`. You’ll see the consequences of this decision. As shown below, this list can be generated using the function `scout_bids_for_gui_env`.
+
+
 Following block shows the content of the subject_list's txt file which contains fullpath to the processed data:
 
 ```
