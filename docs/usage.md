@@ -22,6 +22,6 @@ Next, open the GUI_environments by simply typing in your Matlab terminal “GUI_
 ```
 
 
-![path to wb_command](./usage/path_wb_command.png)
+![path to wb_command](./usage/path_wb_command.PNG)
 
 # Step 3
