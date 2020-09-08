@@ -4,7 +4,7 @@
 
 
 In preparation, you need the list of paths to the processed data from the participants on which connectivity matrices will be calculated. This list needs to be saved as a txt file. Keep in mind that the name of this txt file will be used as prefix in folders and files created by this GUI. You might want to use a descriptive name such as “controls_good_QC.txt”, “PD_and_Ct.txt”, …. When this tutorial was prepared, the selected name was `“list_N_14.txt”`. You’ll see the consequences of this decision.
-Following screenshot shows the content of the subject_list.txt file which contains fullpath to the processed data just before the MNI_NonLinear folder:
+Following block shows the content of the subject_list's txt file which contains fullpath to the processed data:
 
 ```
 C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_human\fake_ID_01\fake_visit_1
@@ -23,6 +23,58 @@ C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_human\fake_
 C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_human\fake_ID_14\fake_visit_1
 ```
 
+The following block shows the folders with processed data within each path
+
+```
+.
++--- fake_ID_01
+|   +--- fake_visit_1
+|   |   +--- anat
+|   |   |   +--- fake_ID_01_fake_visit_1_atlas-MNI_space-fsLR32k_curv.dscalar.nii
+|   |   |   +--- fake_ID_01_fake_visit_1_atlas-MNI_space-fsLR32k_desc-smoothed_myelinmap.dscalar.nii
+|   |   |   +--- fake_ID_01_fake_visit_1_atlas-MNI_space-fsLR32k_myelinmap.dscalar.nii
+|   |   |   +--- fake_ID_01_fake_visit_1_atlas-MNI_space-fsLR32k_sulc.dscalar.nii
+|   |   |   +--- fake_ID_01_fake_visit_1_atlas-MNI_space-fsLR32k_thickness.dscalar.nii
+|   |   |   +--- fake_ID_01_fake_visit_1_space-ACPC_dseg.nii.gz
+|   |   +--- func
+|   |   |   +--- fake_ID_01_fake_visit_1_task-rest_bold_mask.mat
+|   |   |   +--- fake_ID_01_fake_visit_1_task-rest_bold_mask.mat_0.2_cifti_censor_FD_vector_10_minutes_of_data_at_0.2_threshold.txt
+|   |   |   +--- fake_ID_01_fake_visit_1_task-rest_bold_roi-Gordon2014FreeSurferSubcortical_timeseries.ptseries.nii
+|   |   |   +--- fake_ID_01_fake_visit_1_task-rest_bold_roi-HCP2016FreeSurferSubcortical_timeseries.ptseries.nii
+|   |   |   +--- fake_ID_01_fake_visit_1_task-rest_bold_timeseries.dtseries.nii
+|   |   |   +--- fake_ID_01_fake_visit_1_task-rest_run-1_desc-filtered_motion.tsv
+|   |   |   +--- fake_ID_01_fake_visit_1_task-rest_run-1_motion.tsv
+|   |   |   +--- fake_ID_01_fake_visit_1_task-rest_run-2_desc-filtered_motion.tsv
+|   |   |   +--- fake_ID_01_fake_visit_1_task-rest_run-2_motion.tsv
+|   |   |   +--- fake_ID_01_fake_visit_1_task-rest_run-3_desc-filtered_motion.tsv
+|   |   |   +--- fake_ID_01_fake_visit_1_task-rest_run-3_motion.tsv
+|   |   |   +--- fake_ID_01_fake_visit_1_task-rest_run-4_desc-filtered_motion.tsv
+|   |   |   +--- fake_ID_01_fake_visit_1_task-rest_run-4_motion.tsv
++--- fake_ID_02
+|   +--- fake_visit_1
+|   |   +--- anat
+|   |   |   +--- fake_ID_02_fake_visit_1_atlas-MNI_space-fsLR32k_curv.dscalar.nii
+|   |   |   +--- fake_ID_02_fake_visit_1_atlas-MNI_space-fsLR32k_desc-smoothed_myelinmap.dscalar.nii
+|   |   |   +--- fake_ID_02_fake_visit_1_atlas-MNI_space-fsLR32k_myelinmap.dscalar.nii
+|   |   |   +--- fake_ID_02_fake_visit_1_atlas-MNI_space-fsLR32k_sulc.dscalar.nii
+|   |   |   +--- fake_ID_02_fake_visit_1_atlas-MNI_space-fsLR32k_thickness.dscalar.nii
+|   |   |   +--- fake_ID_02_fake_visit_1_space-ACPC_dseg.nii.gz
+|   |   +--- func
+|   |   |   +--- fake_ID_02_fake_visit_1_task-rest_bold_mask.mat
+|   |   |   +--- fake_ID_02_fake_visit_1_task-rest_bold_mask.mat_0.2_cifti_censor_FD_vector_All_Good_Frames.txt
+|   |   |   +--- fake_ID_02_fake_visit_1_task-rest_bold_roi-Gordon2014FreeSurferSubcortical_timeseries.ptseries.nii
+|   |   |   +--- fake_ID_02_fake_visit_1_task-rest_bold_roi-HCP2016FreeSurferSubcortical_timeseries.ptseries.nii
+|   |   |   +--- fake_ID_02_fake_visit_1_task-rest_bold_timeseries.dtseries.nii
+|   |   |   +--- fake_ID_02_fake_visit_1_task-rest_run-1_desc-filtered_motion.tsv
+|   |   |   +--- fake_ID_02_fake_visit_1_task-rest_run-1_motion.tsv
+|   |   |   +--- fake_ID_02_fake_visit_1_task-rest_run-2_desc-filtered_motion.tsv
+|   |   |   +--- fake_ID_02_fake_visit_1_task-rest_run-2_motion.tsv
+|   |   |   +--- fake_ID_02_fake_visit_1_task-rest_run-3_desc-filtered_motion.tsv
+|   |   |   +--- fake_ID_02_fake_visit_1_task-rest_run-3_motion.tsv
+|   |   |   +--- fake_ID_02_fake_visit_1_task-rest_run-4_desc-filtered_motion.tsv
+|   |   |   +--- fake_ID_02_fake_visit_1_task-rest_run-4_motion.tsv
++-
+```
 # Get list of participants, explore folders and count files
 
 To feed the GUI_environments you need a list of participants. This list can be generated using the function `scout_bids_for_gui_env`. This function will allow you to:
