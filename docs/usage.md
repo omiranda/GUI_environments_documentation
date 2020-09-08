@@ -93,3 +93,23 @@ For example, surviving participant 1 has 163 “good (low motion)” frames and 
 * Using all the frames. A connectivity matrix per participant using all the surviving frames.
 
 You might want to maximize the number of surviving frames to be included by adjusting the  parameter “min_time_minute”. This procedure might be relevant if you want to calculate connectivity matrices and save the data per group on different folders. Your groups of interest could be “Controls”, “Condition x”, “Intervention y”. To do this, you need to run the GUI environments on each list, so you might want to use the same (optimized) “min_time_minute” each time you run the GUI.
+
+# Step 7
+
+You'll be asked whether you want the GUI to read timecourses and validate framecount before doing connectivity matrices. 
+
+If you believe the number of frames across parcellation schemas within subjects are right, say "No" to save time. 
+
+![Validate frame count](./usage/validate_frame_count.png)
+
+# Step 8
+
+If there are no problems (missing files tipically), the GUI will find all the parcellated timecourses and will let you know how many parcellation schemas you have. 
+
+It is the time to select which parcellation schemas and environments you want to include for connectivity matrices
+
+![Select environments and parcellation schemas](./usage/select_parcel_env.png)
+
+# Step 9
+
+Now, click on “Set path output” to indicate the folder you like the data to be saved in and click “Open”:
