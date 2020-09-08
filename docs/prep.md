@@ -5,7 +5,7 @@ In addition, the code requires *per* participant a **cifti's `dtseries` variance
 
 # List of participants        
 
-In preparation, you need the list of paths to the processed data from the participants on which connectivity matrices will be calculated. This list needs to be saved as a txt file. Keep in mind that the name of this txt file will be used as prefix in folders and files created by this GUI. You might want to use a descriptive name such as “controls_good_QC.txt”, “PD_and_Ct.txt”, …. When this tutorial was prepared, the selected name was `“list_N_14.txt”`. You’ll see the consequences of this decision. This list can be generated using the function [`scout_bids_for_gui_env`](prep_list.md).
+In preparation, you need the list of paths to the processed data from the participants on which connectivity matrices will be calculated. This list needs to be saved as a txt file. Keep in mind that the name of this txt file will be used as prefix in folders and files created by this GUI. You might want to use a descriptive name such as “controls_good_QC.txt”, “PD_and_Ct.txt”, …. When this tutorial was prepared, the selected name was `“list.txt”`. You’ll see the consequences of this decision. This list can be generated using the function [`scout_bids_for_gui_env`](prep_list.md).
 
 
 Following block shows the content of the subject_list's txt file which contains fullpath to the processed data:
