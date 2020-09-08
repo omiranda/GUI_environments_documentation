@@ -52,7 +52,7 @@ If you [premade variance files using `dtvariance_patch`](prep_variance.md), you 
 ![Provding path to folder with variance files](./usage/path_variance_folder.png)
 
 
-Next it will ask for the method to use for motion censoring. Default is power 2014 fd only. Then, the GUI will ask for other parameters for inclusion and exclusion of frames:
+Next, it will ask for the method to use for motion censoring. Default is power 2014 fd only. Then, the GUI will ask for other parameters for inclusion and exclusion of frames:
 
 ![Motion censoring](./usage/gui_motion_censoring.png)
 
@@ -79,7 +79,7 @@ Every time you change the parameters, you can recalculate the histogram of survi
 
 # Step 6
 
-Once happy with the motion censoring parameters, click here for the Next step: Read frames and motion numbers
+Once happy with the motion censoring parameters, click on "Find timecourses" for the Next step: Read frames and motion numbers
 
 ![Find timecourses](./usage/find_timecourses.png)
 
@@ -113,3 +113,19 @@ It is the time to select which parcellation schemas and environments you want to
 # Step 9
 
 Now, click on “Set path output” to indicate the folder you like the data to be saved in and click “Open”:
+
+![Select folder to save timecourses](./usage/select_folder_to_save_fconn.PNG)
+
+"C:\Users\oscar\OneDrive\Read_the_Docs\GUI_environments_documentation\docs\usage\select_folder_to_save_fconn.PNG"
+
+# Step 9
+
+Once selecting the output folder, you just need to click on “Make environments”
+
+![Make rnvironments](./usage/make_env.png)
+
+The GUI will make a new txt file that only includes the surviving participants. The order of the participants in this new file is preserved in the concatenate timecourses and connectivity matrices created with this GUI. 
+
+The filename of the surviving participants will have as prefix the filename of the original list. After that prefix, the new name will have encoded the parameters used for motion censoring:
+
+![File sith surviving subjects](./usgae/surv_txt.PNG)
