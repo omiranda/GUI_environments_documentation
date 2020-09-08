@@ -71,5 +71,14 @@ The GUI also calculates and displays “on the fly” the number of surviving pa
 
 # Step 5
 
-The dialog “Show histogram” will help you to decide values for the parameters to use to maximize the number of participants. For example, if the default values are used, 4 participants survive motion censoring.
+The dialog “Show histogram” will help you to decide values for the parameters to use to maximize the number of participants. 
+
+Every time you change the parameters, you can recalculate the histogram of surviving frames and participants:
+
 ![Show histogram](./usage/show_hist.PNG)
+
+# Step 6
+
+Once happy with the motion censoring parameters, click here for the Next step: Read frames and motion numbers
+
+![Find timecourses](./usage/find_timecourses.png)
