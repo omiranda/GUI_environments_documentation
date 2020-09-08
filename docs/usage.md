@@ -21,7 +21,12 @@ Next, open the GUI_environments by simply typing in your Matlab terminal “GUI_
 >> GUI_environments
 ```
 
+If this is the first time you are running the *GUI_environments* on your system, it will ask for the path to *wb_command*:
 
 ![path to wb_command](./usage/path_wb_command.PNG)
 
 # Step 3
+
+The GUI will open and ask for the path to the txt file that contains the list of participants:
+
+![Provide path to group file](./usage/path_txt.PNG)
