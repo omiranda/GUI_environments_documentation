@@ -133,7 +133,7 @@ Now, click on “Set path output” to indicate the folder you like the data to 
 
 Once selecting the output folder, you just need to click on “Make environments”
 
-![Make rnvironments](./usage/make_env.png)
+![Make rnvironments](./usage/make_env_arrow.png)
 
 The GUI will make a new txt file that only includes the surviving participants. The order of the participants in this new file is preserved in the concatenate timecourses and connectivity matrices created with this GUI. 
 
