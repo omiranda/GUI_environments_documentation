@@ -75,7 +75,7 @@ The dialog “Show histogram” will help you to decide values for the parameter
 
 Every time you change the parameters, you can recalculate the histogram of surviving frames and participants:
 
-![Show histogram](./usage/show_hist.PNG)
+![Show histogram](./usage/show_hist_arrow.PNG)
 
 # Step 6
 
