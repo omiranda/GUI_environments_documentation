@@ -1,7 +1,5 @@
 site_name: GUI_environments
 theme: material
-plugins:
-  - search
 pages:
 - Overview: GUI_environments.md
 - Preparation, overview: prep.md
