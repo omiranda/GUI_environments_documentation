@@ -1,6 +1,7 @@
 site_name: GUI_environments
-theme: readthedocs
-pages:
+theme: material
+plugins:
+  - search
 - Overview: GUI_environments.md
 - Preparation, overview: prep.md
 - Preparation, list of participants: prep_list.md
