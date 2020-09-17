@@ -75,7 +75,7 @@ root_path='C:\Users\oscar\OneDrive\matlab_code\GUI_environments\data\anonymized_
 
 
 
-# Subjects with specific parcellations schemas
+## Finding subjects with specific parcellations schemas
 
 To look for paths with several parcellation schemas, for example Gordon and HCP, you can use the extra argument *extra_strings_to_match* as follows: 
 
@@ -148,7 +148,7 @@ Corresponding outputs are:
 
 - txt file. It also save a txt file indicating the number of participants with data to calculate connectivity matrices. 
 
-# Specifying preffix for output txt file
+## Specifying preffix for output txt file
 
 To add a preffix to the txt file made by `scout_bids_for_gui_env`, provide the optional argument *preffix*:
 
@@ -158,7 +158,7 @@ preffix='only_Gordon';
     'preffix',preffix)
 ```
 
-# Avoiding dtseries
+## Avoiding dtseries
 
 If for some reason you only need a list of participants with parcellaterd data (i.e., you do not need/have dtseries), set the additional argument *exclude_dtseries_flag* equal to 1:
 
@@ -169,7 +169,7 @@ exclude_dtseries_flag=1;
     'exclude_dtseries_flag',exclude_dtseries_flag,...
 ```
 
-# Example using several optional arguments
+## Example using several optional arguments
 
 ```matlab
 preffix='only_HCP_no_dtseries';
