@@ -1,7 +1,9 @@
+# Using the GUI_environments
+
 To run it, you need an iterative Matlab session and also to have access to the 
 processed data. You can also run the executable (WIP)
 
-# Step 1: Add code to yor Matlab session
+## Step 1: Add code to yor Matlab session
 
 After opening Matlab, add to your current session the path to the code. For example, if the code lives in `C:\Users\oscar\OneDrive\matlab_code`, 
 you need to type in Matlab's terminal:
@@ -12,7 +14,7 @@ addpath(genpath('C:\Users\oscar\OneDrive\matlab_code'))
 
 Alternatively, run the executable (WIP).
 
-# Step 2: Open the GUI_environments
+## Step 2: Open the GUI_environments
 
 Next, open the GUI_environments by simply typing in your Matlab terminal “GUI_environments”:
 
@@ -24,7 +26,7 @@ If this is the first time you are running the *GUI_environments* on your system,
 
 ![path to wb_command](./usage/path_wb_command.PNG)
 
-# Step 3: Load list of participants
+## Step 3: Load list of participants
 
 The GUI will open and ask for the path to the txt file that contains the list of participants:
 
@@ -38,7 +40,7 @@ After selecting the file, click on “Open”. The GUI will read the paths and w
 
 ![To read frames](./usage/to_read_frames.png)
 
-# Step 4: Read frames
+## Step 4: Read frames
 
 Click on “Read frames and motion numbers”. The GUI will read the parcellated timecourses and the corresponding motion numbers. 
 
@@ -68,7 +70,7 @@ The GUI also calculates and displays “on the fly” the number of surviving pa
 
 
 
-# Step 5: Show histogranm
+## Step 5: Show histogranm
 
 The dialog “Show histogram” will help you to decide values for the parameters to use to maximize the number of participants. 
 
@@ -76,7 +78,7 @@ Every time you change the parameters, you can recalculate the histogram of survi
 
 ![Show histogram](./usage/show_hist_arrow.PNG)
 
-# Step 6: Find timecoures
+## Step 6: Find timecoures
 
 Once happy with the motion censoring parameters, click on "Find timecourses" for the Next step: Read frames and motion numbers
 
@@ -107,7 +109,7 @@ Hence, the GUI will calculate 3 connectivity matrices per participant:
 
 You might want to maximize the number of surviving frames to be included by adjusting the  parameter “min_time_minute”. This procedure might be relevant if you want to calculate connectivity matrices and save the data per group on different folders. Your groups of interest could be “Controls”, “Condition x”, “Intervention y”. To do this, you need to run the GUI environments on each list, so you might want to use the same (optimized) “min_time_minute” each time you run the GUI.
 
-# Step 7: Validate count dialog
+## Step 7: Validate count dialog
 
 You'll be asked whether you want the GUI to read timecourses and validate framecount before doing connectivity matrices. 
 
@@ -115,7 +117,7 @@ If you believe the number of frames across parcellation schemas within subjects 
 
 ![Validate frame count](./usage/validate_frame_count.png)
 
-# Step 8: Select parcellation and environment
+## Step 8: Select parcellation and environment
 
 If there are no problems (missing files tipically), the GUI will find all the parcellated timecourses and will let you know how many parcellation schemas you have. 
 
@@ -123,13 +125,13 @@ It is the time to select which parcellation schemas and environments you want to
 
 ![Select environments and parcellation schemas](./usage/select_parcel_env.png)
 
-# Step 9: Select where to save
+## Step 9: Select where to save
 
 Now, click on “Set path output” to indicate the folder you like the data to be saved in and click “Open”:
 
 ![Select folder to save timecourses](./usage/select_folder_to_save_fconn.PNG)
 
-# Step 10: Make environments
+## Step 10: Make environments
 
 Once selecting the output folder, you just need to click on “Make environments”
 
