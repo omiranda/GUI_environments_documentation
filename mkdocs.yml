@@ -2,7 +2,10 @@ site_name: GUI_environments
 theme: material
 plugins:
   - search
-pages:
+markdown_extensions:
+  - attr_list
+docs_dir: docs
+nav:
 - Overview: GUI_environments.md
 - Preparation, overview: prep.md
 - Preparation, list of participants: prep_list.md
